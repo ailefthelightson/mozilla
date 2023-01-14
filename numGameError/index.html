@@ -43,7 +43,7 @@
 </body>
 
 <script>
-    let randomNumber = Math.floor(Math.random()) + 1;
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
 
     const guesses = document.querySelector('.guesses');
     const lastResult = document.querySelector('.lastResult');
@@ -65,7 +65,7 @@
             lastResult.textContent = 'Congrats! You got it right';
             lastResult.style.backgroundColor = 'green';
             lowOrHi.textContent = ''; 
-            setGameOver(); 
+            setGameOver();  
         }
         else if(guessCount === 10)  {
             lastResult.textContent = '!!!GAME OVER!!!';
@@ -116,7 +116,7 @@
 
     lastResult.style.backgroundColor = 'white'; 
 
-    randomNumber = Math.floor(Math.random()) + 1;
+    randomNumber = Math.floor(Math.random() * 100) + 1;
 }
 </script>
 </html>
