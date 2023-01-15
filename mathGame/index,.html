@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math: task 1</title>
+    <style>
+        p {
+            color: purple;
+            margin: 0.5em 0;    
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+   
+</head>
+<body>
+    <section class="preview">
+
+    </section>
+</body>
+<script>
+    let finalResult;
+    let evenOddResult;
+
+
+
+    const section = document.querySelector('section');
+    const para1 = document.createElement('p');
+    const finalResultCheck = finalResult === 48 ? 'Well done' : 'No, it is ${ finalResult }';
+    para1.textContent = 'Is the finalResult 48? ${ finalResultCheck }';
+    const para2 = document.createElement('p');
+    const evenOddResultCheck = evenOddResult === 0 ? 'The final result is even' : 'The final result is odd. Hmm';
+    para2.textContent = evenOddResultCheck;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+</script>
+</html>
