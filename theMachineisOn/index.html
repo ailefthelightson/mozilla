@@ -12,10 +12,10 @@ const txt = document.querySelector("p");
 btn.addEventListener("click", updateBtn);
 
 function updateBtn()    {
-    if (btn.textContent === "Start machine")    [
+    if (btn.textContent === "Start machine")    {
         btn.textContent = "Stop machine";
         text.textContent = "The machine has started!";
-    ] else {
+    } else {
         btn.textContent = "Start machine";
         text.textContent = "The machine must be stopped";
     }
