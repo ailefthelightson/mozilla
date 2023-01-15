@@ -35,17 +35,17 @@ let minus1 = num4 - num3;
 finalResult = add1 * minus1;
 evenOddResult = finalResult%2;
 
-    const section = document.querySelector('section');
+const section = document.querySelector('section');
 
-    const para1 = document.createElement('p');
-    const finalResultCheck = finalResult === 48 ? 'Well done' : 'No, it is ${ finalResult} ';
-    para1.textContent = 'Is the finalResult 48? ${ finalResultCheck }';
-    const para2 = document.createElement('p');
-    const evenOddResultCheck = evenOddResult === 0 ? 'The final result is even' : 'The final result is odd. Hmm';
-    para2.textContent = evenOddResultCheck;
+const para1 = document.createElement('p');
+const finalResultCheck = finalResult === 48 ? `Yes, well done!` : `No, it is ${ finalResult }`;
+para1.textContent = `Is the finalResult 48? ${ finalResultCheck }`;
+const para2 = document.createElement('p');
+const evenOddResultCheck = evenOddResult === 0 ? 'The final result is even!' : 'The final result is odd. Hrm.';
+para2.textContent = evenOddResultCheck;
 
-    section.appendChild(para1);
-    section.appendChild(para2);
+section.appendChild(para1);
+section.appendChild(para2);
 
 </script>
 </html>
