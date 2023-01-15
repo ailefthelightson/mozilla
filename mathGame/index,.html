@@ -26,9 +26,17 @@
     let finalResult;
     let evenOddResult;
 
-
+let num1 = 4;
+let num2 = 2; 
+let num3 = 6;
+let num4 = 14;
+let add1 = num1 + num2; 
+let minus1 = num4 - num3;
+let finalResult = add1 * minus1;
+let evenOddResult = finalResult%2;
 
     const section = document.querySelector('section');
+
     const para1 = document.createElement('p');
     const finalResultCheck = finalResult === 48 ? 'Well done' : 'No, it is ${ finalResult} ';
     para1.textContent = 'Is the finalResult 48? ${ finalResultCheck }';
