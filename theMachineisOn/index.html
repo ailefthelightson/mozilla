@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The machine is on or off game</title>
     <script>
-const btn = document.querySelector("button");
+const btn = document.querySelector("#big");
 const txt = document.querySelector("p");
 
 btn.addEventListener('click', updateBtn);
@@ -25,7 +25,7 @@ function updateBtn() {
 </script>
 </head>
 <body>
-    <button>Start machine</button>  
+    <button id="big">Start machine</button>  
     <p>The machine is stopped</p>
 </body>
 
