@@ -8,18 +8,19 @@
 </head>
 <body>
 
-    const button = document.querySelector("button");
 
-    function greet()    {
-        const name = prompt("what is your name?");
     <button>Press me</button>
-    const button = document.querySelector("button");
-
-    function greet()    {
-        const name = prompt("what is your name?");
-
-    }
+   
 </body>
 
+<script>
+ const button = document.querySelector("button");
 
+function greet()    {
+    const name = prompt("what is your name?");   
+    alert(`hello ${name}, nice to see you!`);
+    }
+
+button.addEventListener("click", greet);
+</script>
 </html>
